@@ -1,0 +1,28 @@
+{
+  "name": "@jinto.j/widget-package-iframe",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jinto Jose",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.5",
+    "@rollup/plugin-babel": "^6.0.4",
+    "rollup": "^4.17.2",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/runtime": "^7.24.5"
+  }
+}
