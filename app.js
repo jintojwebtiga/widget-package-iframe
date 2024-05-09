@@ -6,7 +6,7 @@ export const createWidget = (containerSelector) => {
 
   const openLogin = ( { onLoginComplete } ) => {
     const iframe = document.createElement('iframe');
-    iframe.src = 'http://localhost:5173/';
+    iframe.src = 'https://wallet-app-routed.vercel.app';
     container.innerHTML = '';
     container.appendChild(iframe);
 
@@ -19,7 +19,7 @@ export const createWidget = (containerSelector) => {
 
   const showInfo = () => {
     const iframe = document.createElement('iframe');
-    iframe.src = 'http://localhost:5173/info';
+    iframe.src = 'https://wallet-app-routed.vercel.app/info';
     container.innerHTML = '';
     container.appendChild(iframe);
   };
